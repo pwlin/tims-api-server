@@ -1,0 +1,5 @@
+{
+    "TIMS_FEED_URL": "http://data.tfl.gov.uk/tfl/syndication/feeds/tims_feed.xml",
+    "TIMS_APP_ID": "",
+    "TIMS_APP_KEY": ""
+}
