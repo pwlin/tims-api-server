@@ -1,7 +1,7 @@
 TIMS API SERVER
 ===============
 
-A REST API server for consuming live traffic disruptions data via [Traffic Information Management System (TIMS) feed ](https://api-portal.tfl.gov.uk/docs) which is provided by TfL (Transport for London).
+A REST API server for consuming London's live traffic disruptions data via [Traffic Information Management System (TIMS) feed ](https://api-portal.tfl.gov.uk/docs) which is provided by TfL (Transport for London).
 
 Installation
 ------------
