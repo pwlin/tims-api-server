@@ -26,6 +26,10 @@ If you want your response in [JSONP format](https://en.wikipedia.org/wiki/JSONP)
 
         http://localhost:3000/disruptions?callback=JSON_CALLBACK
 
+Example Front end
+-----------------
+To see what you can do with this data, install [TIMS MAP UI](https://github.com/pwlin/tims-map-ui) app which shows all London's traffic disruptions. 
+
 
 LICENSE
 --------
