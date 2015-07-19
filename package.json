@@ -1,6 +1,6 @@
 {
     "name": "tims-api-server",
-    "description": "A REST API server for consuming TIMS feed data.",
+    "description": "A REST API server for consuming Live Traffic Disruptions (TIMS) feed data of TfL (Transport for London).",
     "version": "0.0.1",
     "homepage": "https://github.com/pwlin/tims-api-server",
     "license": "MIT",

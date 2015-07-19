@@ -1,7 +1,7 @@
 TIMS API SERVER
 ===============
 
-A REST API server for consuming [TIMS feed data](https://api-portal.tfl.gov.uk/docs).
+A REST API server for consuming [Live Traffic Disruptions (TIMS) feed data](https://api-portal.tfl.gov.uk/docs) of TfL (Transport for London).
 
 Installation
 ------------
@@ -17,14 +17,14 @@ Installation
 Current REST Endpoints
 ----------------------
 
-`/getAll` : Get a long list of all disruptions in JSON format.
+`/disruptions` : Get a list of all disruptions in JSON format.
 
 Using JSONP
 -----------
 
 If you want your response in [JSONP format](https://en.wikipedia.org/wiki/JSONP), append a `callback` query string to your request:
 
-        http://localhost:3000/getAll?callback=myfunc
+        http://localhost:3000/disruptions?callback=JSON_CALLBACK
 
 
 LICENSE

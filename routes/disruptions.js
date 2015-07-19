@@ -7,12 +7,12 @@ var xml2js = require('xml2js');
 var utils = require('../libs/utils');
 var config = require('../config.json');
 
-/* GET get all disruptions */
+/* GET disruptions */
 router.get('/', function (req, res, next) {
-    var cacheKey = utils.md5('/getAll'),
+    var cacheKey = utils.md5('/disruptions'),
         cachedItems = cache.get(cacheKey);
     if (utils.isEmptyObject(cachedItems)) {
-        console.log('GetAll: Fetching FRESH Feed');
+        console.log('/disruptions: Fetching FRESH Feed');
         request({
             uri: config.TIMS_FEED_URL,
             qs: {
@@ -33,7 +33,7 @@ router.get('/', function (req, res, next) {
             }
         });
     } else {
-        console.log('GetAll: Serving CACHED Data');
+        console.log('/disruptions: Serving CACHED Data');
         res.send(utils.buildRESTCallback(req.query, cachedItems[cacheKey]));
     }
 

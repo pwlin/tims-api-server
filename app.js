@@ -19,13 +19,12 @@ try {
 
 var compression = require('compression');
 var express = require('express');
-var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var utils = require('./libs/utils');
 
 var index = require('./routes/index');
-var getAll = require('./routes/getAll');
+var disruptions = require('./routes/disruptions');
 
 var app = express();
 
@@ -50,7 +49,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', index);
-app.use('/getAll', getAll);
+app.use('/disruptions', disruptions);
 
 // catch 404 error
 app.use(function (req, res, next) {
